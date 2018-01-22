@@ -7,7 +7,7 @@ pi1 = pigpio.pi()
 COLORS = {'BLUE': 13, 'RED': 19, 'GREEN': 26}
 
 #Cycle method that turns brightness on and off for given color
-#colors is a pointer incase multiple arguements are passed to create a different color
+#colors is a pointer in case multiple arguements are passed to create a different color
 def cycle(*colors):
     for level in range(1, 256):
         for color in colors:
